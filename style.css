@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10%;
+    padding: 10%;
+    background-color: #f4f8fb;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #000000;
+    color:#f59df8;
+
+}
+.navbar .logo a {
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    text-decoration: line-through;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #eff1e2;
+    font-size: 1.1rem;
+
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        background-color: #fff7f7;
+        flex-direction: column;
+        gap: 2rem;
+        display: flex;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
+
+
+header{
+    
+    color: rgb(0, 0, 0);  
+    padding: 30px 10px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    background-color: #d5f1f1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #040e22;
+}
+
+
+
+.features{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.feature1 {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(226, 181, 181);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+
+}
+
+.feature1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature2 {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(245, 199, 199);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+
+}
+
+.feature2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #333;
+    color: rgb(248, 245, 245);
+    text-align: center;
+    padding: 15px 0;
+}
+
+
